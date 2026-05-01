@@ -22,9 +22,9 @@ public class Program {
 		System.out.println("Entre com os dados do aluguel");
 		System.out.print("Modelo do carro:");
 		String carModel = sc.nextLine();
-		System.out.print("Retirada (dd/MM/yyyy hh:mm):");
+		System.out.print("Retirada (dd/MM/yyyy HH:mm):");
 		LocalDateTime start = LocalDateTime.parse(sc.nextLine(), fmt);
-		System.out.print("Retorno (dd/MM/yyyy hh:mm):");
+		System.out.print("Retorno (dd/MM/yyyy HH:mm):");
 		LocalDateTime finish = LocalDateTime.parse(sc.nextLine(), fmt);
 
 		CarRental cr = new CarRental(start, finish, new Vehicle(carModel));
